@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fbf2e3">
+  <title>Book an Event — MARVIN Studio</title>
+  <meta name="description" content="Explore MARVIN Studio experiences, captured in motion.">
+  <link rel="stylesheet" href="book-event.css?v=event-booking-1">
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="MARVIN Studio home">
+      <img src="assets/marvin-logo-lossless.webp" alt="MARVIN" width="1788" height="648">
+    </a>
+    <details class="site-menu">
+      <summary aria-label="Navigation menu"><span></span><span></span><span></span></summary>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="book-session.html">Book a Session</a>
+        <a href="book-event.html" aria-current="page">Book an Event</a>
+      </nav>
+    </details>
+  </header>
+  <main>
+    <section class="motion" aria-labelledby="motion-title">
+      <div class="motion__viewfinder" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <div class="motion__labels" aria-hidden="true"><span class="motion__record">REC</span><span>MARVIN CAM / 01</span></div>
+      <h1 id="motion-title">
+        Events, captured<br>in motion.
+        <svg class="motion__underline" viewBox="0 0 282 24" fill="none" aria-hidden="true">
+          <path d="M3 19Q139-5 279 10Q203 11 128 22" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </h1>
+      <div class="film-carousel" id="event-films" role="region" aria-label="Event films" tabindex="0">
+        <article class="featured-film" aria-label="Wedding event film">
+          <div class="featured-film__media">
+            <video id="featured-film-video" class="featured-film__video" width="720" height="1280" controls playsinline preload="metadata" poster="assets/preview-img-billywedding.jpg" aria-label="MARVIN Studio Wedding event film">
+              <source src="assets/wedding-billy.mp4" type="video/mp4">
+              Your browser does not support embedded video. <a href="assets/wedding-billy.mp4">Watch the film</a>.
+            </video>
+            <div class="film-focus" hidden>
+              <button class="play-symbol" type="button" aria-label="Play Wedding event film" aria-controls="featured-film-video"><svg viewBox="0 0 32 32" aria-hidden="true"><path class="play-icon" d="M11 6 26 16 11 26Z"/><path class="pause-icon" d="M9 7h5v18H9zm9 0h5v18h-5z"/></svg></button>
+            </div>
+          </div>
+          <p class="film-status" role="status" hidden></p>
+          <div class="featured-film__footer">
+            <div class="featured-film__caption">
+              <div>
+                <h2>BILLY’S WEDDING</h2>
+                <p>Wedding · MARVIN Studio</p>
+              </div>
+              <span class="film-duration"></span>
+            </div>
+            <div class="film-navigation">
+              <button class="film-arrow film-arrow--previous" type="button" aria-label="Previous film" aria-controls="event-films"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12H4m7-7-7 7 7 7"/></svg></button>
+              <button class="film-arrow film-arrow--next" type="button" aria-label="Next film" aria-controls="event-films"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16m-7-7 7 7-7 7"/></svg></button>
+              <span class="film-count" aria-label="Film 1 of 2">01 / 02</span>
+              <div class="film-meter" aria-hidden="true">
+                <span>−2</span><span>−1</span><span>0</span><span>+1</span><span>+2</span>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="featured-film" aria-label="IKEA event film">
+          <div class="featured-film__media">
+            <video id="ikea-film-video" class="featured-film__video" width="720" height="1280" controls playsinline preload="metadata" poster="assets/ikea-poster.jpg" aria-label="MARVIN Studio IKEA event film">
+              <source src="assets/ikea.mp4" type="video/mp4">
+              Your browser does not support embedded video. <a href="assets/ikea.mp4">Watch the film</a>.
+            </video>
+            <div class="film-focus" hidden>
+              <button class="play-symbol" type="button" aria-label="Play IKEA event film" aria-controls="ikea-film-video"><svg viewBox="0 0 32 32" aria-hidden="true"><path class="play-icon" d="M11 6 26 16 11 26Z"/><path class="pause-icon" d="M9 7h5v18H9zm9 0h5v18h-5z"/></svg></button>
+            </div>
+          </div>
+          <p class="film-status" role="status" hidden></p>
+          <div class="featured-film__footer">
+            <div class="featured-film__caption">
+              <div>
+                <h2>IKEA</h2>
+                <p>Event · MARVIN Studio</p>
+              </div>
+              <span class="film-duration"></span>
+            </div>
+            <div class="film-navigation">
+              <button class="film-arrow film-arrow--previous" type="button" aria-label="Previous film" aria-controls="event-films"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12H4m7-7-7 7 7 7"/></svg></button>
+              <button class="film-arrow film-arrow--next" type="button" aria-label="Next film" aria-controls="event-films"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16m-7-7 7 7-7 7"/></svg></button>
+              <span class="film-count" aria-label="Film 2 of 2">02 / 02</span>
+              <div class="film-meter" aria-hidden="true">
+                <span>−2</span><span>−1</span><span>0</span><span>+1</span><span>+2</span>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="memory-strip" aria-labelledby="memory-strip-title">
+      <h2 id="memory-strip-title">The good times,<br>on repeat.</h2>
+      <div class="memory-strip__camera" aria-hidden="true">
+        <span class="memory-strip__lens"></span>
+        <span class="memory-strip__star"></span>
+      </div>
+      <div class="memory-strip__reels">
+        <div class="memory-strip__reel">
+          <div class="memory-strip__track">
+            <div class="memory-strip__frames">
+              <figure class="memory-strip__frame"><img src="assets/preview-img-billywedding.jpg" alt="Guests with their MARVIN keepsakes" loading="lazy" style="object-position: center 65%"></figure>
+              <figure class="memory-strip__frame"><img src="assets/02-mini-tote-hero.png" alt="Mini tote photobooth memories" loading="lazy" style="object-position: 32% 42%"></figure>
+              <figure class="memory-strip__frame"><img src="assets/ikea-poster.jpg" alt="MARVIN at the IKEA event" loading="lazy" style="object-position: center 45%"></figure>
+              <figure class="memory-strip__frame"><img src="assets/film-frame-placeholder.svg" alt="Photo placeholder"></figure>
+            </div>
+          </div>
+        </div>
+        <div class="memory-strip__reel">
+          <div class="memory-strip__track">
+            <div class="memory-strip__frames">
+              <figure class="memory-strip__frame"><img src="assets/03-4r-hero.png" alt="MARVIN photo keepsake" loading="lazy" style="object-position: 35% 38%"></figure>
+              <figure class="memory-strip__frame"><img src="assets/wedding-billy-poster.jpg" alt="A moment from the wedding" loading="lazy" style="object-position: center 50%"></figure>
+              <figure class="memory-strip__frame"><img src="assets/01-xl-strip-hero.png" alt="XL photo strip keepsake" loading="lazy" style="object-position: 52% 42%"></figure>
+              <figure class="memory-strip__frame"><img src="assets/film-frame-placeholder.svg" alt="Photo placeholder"></figure>
+            </div>
+          </div>
+        </div>
+      </div>
+      <dialog class="event-gallery" aria-labelledby="event-gallery-title">
+        <div class="event-gallery__panel">
+          <header class="event-gallery__header">
+            <div>
+              <h2 id="event-gallery-title">MARVIN moments</h2>
+              <p class="event-gallery__info"></p>
+            </div>
+            <form method="dialog">
+              <button class="event-gallery__close" aria-label="Close gallery" autofocus>×</button>
+            </form>
+          </header>
+          <div class="event-gallery__body">
+            <div class="event-gallery__viewer">
+              <figure class="event-gallery__frame">
+                <div class="event-gallery__stage" aria-busy="false">
+                  <div class="event-gallery__image"></div>
+                  <p class="event-gallery__status" hidden></p>
+                  <div class="event-gallery__corners" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+                </div>
+                <figcaption class="event-gallery__metadata" aria-hidden="true"></figcaption>
+              </figure>
+              <div class="event-gallery__navigation">
+                <button type="button" class="event-gallery__previous" aria-label="Previous photo">←</button>
+                <span class="event-gallery__counter"></span>
+                <button type="button" class="event-gallery__next" aria-label="Next photo">→</button>
+              </div>
+            </div>
+            <div class="event-gallery__sheet" role="region" aria-label="Gallery thumbnails" tabindex="0">
+              <ol class="event-gallery__thumbnails"></ol>
+            </div>
+          </div>
+          <p class="event-gallery__announcement" role="status" aria-atomic="true"></p>
+        </div>
+      </dialog>
+    </section>
+    <section class="keepsakes" aria-labelledby="keepsakes-title">
+      <header class="keepsakes__header">
+        <p>Made to take home</p>
+        <h2 id="keepsakes-title">Small keepsakes.<br>Big memories.</h2>
+      </header>
+      <div class="keepsakes__tabs" role="tablist" aria-label="Keepsake types" hidden>
+        <button id="keepsake-tab-xl" type="button" role="tab" aria-controls="keepsake-xl" aria-selected="true">XL Strip</button>
+        <button id="keepsake-tab-tote" type="button" role="tab" aria-controls="keepsake-tote" aria-selected="false" tabindex="-1">Mini Tote</button>
+        <button id="keepsake-tab-4r" type="button" role="tab" aria-controls="keepsake-4r" aria-selected="false" tabindex="-1">4R</button>
+      </div>
+      <div class="keepsakes__carousel">
+        <article class="keepsakes__card" id="keepsake-xl">
+          <img src="assets/01-xl-strip-hero.png" alt="Model holding an oversized MARVIN photo strip" width="941" height="1671" loading="lazy">
+          <div class="keepsakes__details">
+            <h3>XL Strip</h3>
+            <p>Four moments.<br>One keepsake.</p>
+          </div>
+        </article>
+        <article class="keepsakes__card" id="keepsake-tote">
+          <img src="assets/02-mini-tote-hero.png" alt="Model holding a mini tote with MARVIN photo prints" width="941" height="1671" loading="lazy">
+          <div class="keepsakes__details">
+            <h3>Mini Tote</h3>
+            <p>A little tote for your photo memories.</p>
+          </div>
+        </article>
+        <article class="keepsakes__card" id="keepsake-4r">
+          <img src="assets/03-4r-hero.png" alt="Model holding a MARVIN photo print" width="941" height="1671" loading="lazy">
+          <div class="keepsakes__details">
+            <h3>4R</h3>
+            <p>A classic print to take home.</p>
+          </div>
+        </article>
+        <div class="keepsakes__controls" hidden>
+          <button class="keepsakes__previous" type="button" aria-label="Previous keepsake">←</button>
+          <p class="keepsakes__count" role="status" aria-atomic="true"></p>
+          <button class="keepsakes__next" type="button" aria-label="Next keepsake">→</button>
+        </div>
+      </div>
+    </section>
+    <section class="event-booking" aria-labelledby="event-booking-title">
+      <div class="event-booking__intro">
+        <p class="event-booking__eyebrow">Let’s make a moment</p>
+        <h2 id="event-booking-title">Your event could be the next strip.</h2>
+
+        <div class="print-booth">
+          <div class="print-booth__body" aria-hidden="true">
+            <div class="print-booth__camera"><i></i><span></span><b></b></div>
+            <img src="assets/marvin-logo-lossless.webp" alt="" width="1788" height="648">
+          </div>
+          <div class="print-booth__slot" aria-hidden="true"></div>
+          <div class="print-booth__output">
+            <div class="print-booth__paper">
+              <img src="assets/preview-img-billywedding.jpg" alt="Guests holding their MARVIN keepsakes" loading="lazy">
+              <img src="assets/wedding-billy-poster.jpg" alt="Group posing together at a reception" loading="lazy">
+              <img src="assets/ikea-poster.jpg" alt="Green and white cars parked side by side" loading="lazy">
+              <p>Your event<br>Next in line</p>
+            </div>
+          </div>
+        </div>
+
+        <p class="event-booking__support">Good people. Great photos. Yours to keep.</p>
+        <a class="event-booking__action" href="#event-booking-faq">
+          Let’s make it happen <span aria-hidden="true">↗</span>
+        </a>
+        <p class="event-booking__caption">Tell us what you’re planning.</p>
+      </div>
+
+      <section class="event-faq" aria-labelledby="event-faq-title">
+        <h3 id="event-faq-title">A few quick answers</h3>
+        <details>
+          <summary>What events can you cover?</summary>
+          <p>MARVIN Studio showcases weddings and brand activations. See Billy’s Wedding and IKEA in the event films above.</p>
+        </details>
+        <details>
+          <summary>Can we customise the prints?</summary>
+          <p>Print customisation details are currently unavailable.</p>
+        </details>
+        <details id="event-booking-faq">
+          <summary>How do I book?</summary>
+          <p>Online event enquiries are currently unavailable.</p>
+        </details>
+      </section>
+    </section>
+  </main>
+  <footer class="event-footer">
+    <a href="index.html" aria-label="MARVIN Studio home">
+      <img src="assets/marvin-logo-lossless.webp" alt="" width="1788" height="648">
+    </a>
+  </footer>
+  <script src="featured-film.js?v=motion-viewfinder-6" defer></script>
+  <script src="memory-strip.js?v=7" defer></script>
+  <script src="keepsakes.js" defer></script>
+  <script src="event-booking.js?v=2" defer></script>
+</body>
+</html>

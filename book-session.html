@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fbf2e3">
+  <title>Book a Session — MARVIN Studio</title>
+  <meta name="description" content="Explore MARVIN Studio experiences, captured in motion.">
+  <link rel="stylesheet" href="book-session.css?v=video-2">
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="MARVIN Studio home">
+      <img src="assets/marvin-logo-lossless.webp" alt="MARVIN" width="1788" height="648">
+    </a>
+    <details class="site-menu">
+      <summary aria-label="Navigation menu"><span></span><span></span><span></span></summary>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="book-session.html" aria-current="page">Book a Session</a>
+        <a href="book-event.html">Book an Event</a>
+      </nav>
+    </details>
+  </header>
+  <main>
+    <section class="motion" aria-labelledby="motion-title">
+      <svg class="motion__curve" viewBox="0 0 836 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40C0 14 80 0 200 0S570 38 740 17Q816 0 836 40Z"/></svg>
+      <div class="motion__intro">
+        <p class="motion__eyebrow">MARVIN IN MOTION <span aria-hidden="true"></span></p>
+        <h1 id="motion-title">Events, captured<br>in motion.</h1>
+        <svg class="motion__underline" viewBox="0 0 280 26" fill="none" aria-hidden="true"><path d="M3 18Q120-4 270 10M124 21Q182 11 270 10" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>
+      </div>
+      <article class="featured-film" aria-labelledby="featured-film-title">
+        <div class="featured-film__media featured-film_media">
+          <video id="featured-film-video" class="featured-film__video" controls playsinline preload="metadata" aria-label="MARVIN Studio wedding event film">
+            <source src="assets/wedding-billy.mp4#t=0.001" type="video/mp4">
+            Your browser does not support embedded video. <a href="assets/wedding-billy.mp4">Watch the film</a>.
+          </video>
+          <button class="play-symbol" type="button" aria-label="Play wedding event film" aria-controls="featured-film-video" hidden><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M11 6 26 16 11 26Z"/></svg></button>
+        </div>
+        <p class="film-status" role="status" hidden></p>
+        <div class="featured-film__caption">
+          <div>
+            <h2 id="featured-film-title">BILLY’S WEDDING</h2>
+            <p>Wedding · MARVIN Studio</p>
+          </div>
+          <button class="watch-film" type="button" aria-controls="featured-film-video">WATCH FILM <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 12h17M13 5l7 7-7 7"/></svg></button>
+        </div>
+      </article>
+      <!-- Decorative markers match the reference; activate when films are supplied. -->
+      <div class="film-pagination" aria-hidden="true"><span class="is-current"></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+    </section>
+  </main>
+  <script src="featured-film.js?v=1" defer></script>
+</body>
+</html>

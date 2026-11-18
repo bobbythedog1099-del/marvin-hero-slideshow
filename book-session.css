@@ -1,0 +1,42 @@
+:root { color-scheme: light; --cream: #fbf2e3; --ink: #20211e; --yellow: #ffe37c; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--cream); color: var(--ink); font-family: Arial, Helvetica, sans-serif; -webkit-font-smoothing: antialiased; }
+a { color: inherit; }
+.site-header { max-width: 1100px; margin: auto; height: clamp(76px, 11vw, 112px); padding: 0 5.2%; display: flex; align-items: center; justify-content: space-between; position: relative; z-index: 3; }
+.wordmark { display: block; width: clamp(140px, 20vw, 210px); height: clamp(29px, 4.1vw, 43px); overflow: hidden; }
+.wordmark img { display: block; width: 100%; height: auto; }
+.site-menu summary { list-style: none; width: 44px; min-height: 44px; display: flex; flex-direction: column; justify-content: center; gap: 6px; padding: 4px; cursor: pointer; }
+.site-menu summary::-webkit-details-marker { display: none; }
+.site-menu summary span { display: block; height: 3px; border-radius: 3px; background: #111; }
+.site-menu nav { position: absolute; right: 5.2%; top: 85%; min-width: 190px; padding: 10px; border: 1px solid #ddd1bd; border-radius: 15px; background: var(--cream); box-shadow: 0 10px 30px #0002; }
+.site-menu nav a { display: block; padding: 12px; text-decoration: none; border-radius: 8px; }
+.site-menu nav a:hover, .site-menu nav a[aria-current] { background: #f2e5ce; }
+:focus-visible { outline: 3px solid #bb8c12; outline-offset: 5px; }
+.motion { position: relative; max-width: 1100px; margin: 28px auto 0; padding: 0 4.55% 3%; background: var(--ink); color: var(--cream); border-radius: 0 0 clamp(28px, 6.5vw, 60px) clamp(28px, 6.5vw, 60px); }
+.motion__curve { position: absolute; bottom: calc(100% - 1px); left: 0; width: 100%; height: clamp(28px, 4.8vw, 48px); fill: var(--ink); }
+.motion__intro { padding: 0 2.7%; }
+.motion__eyebrow { display: flex; align-items: center; gap: 3vw; margin: 0 0 4px; font-size: clamp(12px, 3vw, 27px); font-weight: 500; line-height: 1.5; }
+.motion__eyebrow span { height: 1px; width: 27%; background: var(--cream); }
+.motion h1 { margin: 0; font-size: clamp(29px, 8.2vw, 82px); font-style: italic; font-weight: 800; line-height: .96; letter-spacing: -.035em; }
+.motion__underline { display: block; width: 38%; height: auto; margin: 6px 0 14px; color: var(--yellow); }
+.featured-film__media { position: relative; width: 100%; aspect-ratio: 1.94; overflow: hidden; border-radius: clamp(16px, 4.5vw, 40px); background: radial-gradient(ellipse at 30% 20%, #565249, #34342f 60%, #292a26); display: grid; place-items: center; }
+.featured-film__placeholder { position: absolute; bottom: 12%; font-size: clamp(11px, 2.1vw, 18px); color: #e1d8c8; }
+.play-symbol { width: 13%; aspect-ratio: 1; border: 2px solid var(--cream); border-radius: 50%; display: grid; place-items: center; background: #0002; }
+.play-symbol svg { width: 53%; fill: var(--cream); }
+.featured-film__caption { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 10px .8% 0; }
+.featured-film h2 { font-size: clamp(16px, 4.1vw, 37px); line-height: 1.1; letter-spacing: -.025em; margin: 0 0 4px; }
+.featured-film p { margin: 0; font-size: clamp(11px, 2.65vw, 24px); letter-spacing: -.025em; }
+.watch-film { display: flex; align-items: center; justify-content: center; flex-shrink: 0; gap: 2vw; border: 1.5px solid var(--cream); border-radius: 999px; padding: 1.5vw 3vw; font: 600 clamp(10px, 2.4vw, 22px) Arial, sans-serif; color: var(--cream); background: transparent; white-space: nowrap; }
+.watch-film:disabled { cursor: default; }
+.watch-film svg { width: clamp(18px, 3.4vw, 30px); }
+.film-pagination { display: flex; justify-content: space-between; gap: 2.2%; margin: 3.2% 4.5% 0; }
+.film-pagination span { height: clamp(4px, 1vw, 8px); flex: 1; border-radius: 999px; background: #8a887f; }
+.film-pagination .is-current { background: var(--yellow); }
+@media (min-width: 1100px) { .motion { padding: 0 50px 30px; } }
+@media (max-width: 359px) { .featured-film__caption { flex-wrap: wrap; } .watch-film { margin-top: 6px; } }
+
+.featured-film__video { display: block; width: 100%; height: 100%; min-height: 0; object-fit: contain; background: #111; }
+.featured-film__media .play-symbol { position: absolute; inset: 0; margin: auto; padding: 0; color: var(--cream); cursor: pointer; }
+.play-symbol[hidden], .film-status[hidden] { display: none; }
+.watch-film { cursor: pointer; }
+.film-status { margin: 10px 0; line-height: 1.4; }

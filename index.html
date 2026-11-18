@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fff9e9">
+  <meta name="description" content="MARVIN Studio — A photobooth experience for your moments.">
+  <title>MARVIN Studio — More Than Photos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/01-xl-strip-hero.png">
+  <link rel="stylesheet" href="marvin-homepage-styles.css?v=preview-crossfade-7">
+</head>
+<body>
+  <main class="hero" aria-label="MARVIN Studio">
+    <div class="hero__slides" aria-hidden="true">
+      <div class="hero__slide hero__slide--xl"><img src="assets/01-xl-strip-hero.png" alt="" fetchpriority="high"></div>
+      <div class="hero__slide hero__slide--mini"><img src="assets/02-mini-tote-hero.png" alt="" loading="eager"></div>
+      <div class="hero__slide hero__slide--4r"><img src="assets/03-4r-hero.png" alt="" loading="eager"></div>
+    </div>
+    <div class="hero__shade" aria-hidden="true"></div>
+    <header class="hero__heading">
+      <a class="brand" href="index.html" aria-label="MARVIN Studio home"><img class="brand__wordmark" src="assets/marvin-logo-lossless.webp" alt="MARVIN"><span class="brand__studio" aria-hidden="true">STUDIO</span></a>
+      <p class="hero__eyebrow">MORE THAN PHOTOS <span aria-hidden="true">✳</span> MARVIN STUDIO</p>
+      <h1 class="hero__tagline"><span class="tagline__desktop">A photobooth<br>experience for<br><em>your moments.</em></span><span class="tagline__mobile">A photobooth experience<br>for <em>your moments,</em></span></h1>
+      <p class="hero__support">EVENTS <span>·</span> SESSIONS <span>·</span> ACTIVATIONS</p>
+    </header>
+    <nav class="hero__actions" aria-label="Booking options">
+      <a class="action action--event" href="book-event.html">
+        <svg class="action__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/><path d="M8 14h2M14 14h2M8 18h2"/></svg>
+        <span class="action__label">Book an Event</span>
+        <svg class="action__arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
+      </a>
+      <a class="action action--session" href="book-session.html">
+        <svg class="action__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4H9l-2 3H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-3-3Z"/><circle cx="12" cy="13" r="3"/></svg>
+        <span class="action__label">Book a Session</span>
+        <svg class="action__arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
+      </a>
+    </nav>
+    <div class="hero__pagination" aria-hidden="true"><i></i><i></i><i></i></div>
+  </main>
+</body>
+</html>
