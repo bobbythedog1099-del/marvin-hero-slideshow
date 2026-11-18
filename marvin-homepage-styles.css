@@ -116,6 +116,8 @@ body { font-family: 'DM Sans', 'Helvetica Neue', Arial, sans-serif; -webkit-font
     transform: translateX(-50%);
   }
   .hero__slide--xl img { height: 125%; bottom: -19%; }
+  .hero__slide--mini img,
+  .hero__slide--4r img { height: 120%; bottom: -20%; }
   .hero__slides { pointer-events: none; }
   .brand { position: relative; width: clamp(130px, min(56vw, 28svh), 300px); aspect-ratio: 56 / 16.7; overflow: hidden; container-type: inline-size; }
   .brand__wordmark { position: absolute; top: 0; left: 0; width: 100%; clip-path: inset(0 0 42% 0); }
