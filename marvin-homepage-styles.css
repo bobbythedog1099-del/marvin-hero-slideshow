@@ -61,21 +61,42 @@ body { font-family: 'DM Sans', 'Helvetica Neue', Arial, sans-serif; -webkit-font
 @media (max-width: 699px), (max-width: 1000px) and (max-height: 540px) and (orientation: landscape) {
   html, body { height: auto; overflow: visible; }
   .hero {
+    --hero-gutter-left: max(12px, calc(env(safe-area-inset-left) + 8px));
+    --hero-gutter-right: max(12px, calc(env(safe-area-inset-right) + 8px));
     position: relative;
     width: 100%;
     height: auto;
     min-height: 100vh;
     min-height: 100svh;
     display: grid;
-    grid-template-rows: auto minmax(clamp(22px, 8svh, 80px), 1fr) auto auto;
+    grid-template-rows: auto minmax(clamp(108px, 24svh, 184px), 1fr) auto auto;
     justify-items: center;
     padding: calc(env(safe-area-inset-top) + clamp(8px, 2.5svh, 24px))
-      max(12px, calc(env(safe-area-inset-right) + 8px))
+      var(--hero-gutter-right)
       calc(env(safe-area-inset-bottom) + clamp(8px, 2svh, 20px))
-      max(12px, calc(env(safe-area-inset-left) + 8px));
+      var(--hero-gutter-left);
   }
-  .hero__shade { background: none; }
-  .hero__heading { position: relative; inset: auto; width: 100%; min-width: 0; }
+  .hero__shade { display: none; }
+  .hero__heading {
+    position: relative;
+    grid-row: 1;
+    inset: auto;
+    width: 100%;
+    min-width: 0;
+    padding-bottom: clamp(8px, 2svh, 16px);
+  }
+  .hero__slides {
+    position: relative;
+    grid-row: 2;
+    inset: auto;
+    width: auto;
+    height: auto;
+    min-height: 0;
+    justify-self: stretch;
+    margin-inline: calc(-1 * var(--hero-gutter-left)) calc(-1 * var(--hero-gutter-right));
+    background: #f9e2bd;
+  }
+  .hero__slide img { object-position: left 33%; }
   .brand { position: relative; width: clamp(130px, min(56vw, 28svh), 300px); aspect-ratio: 56 / 16.7; overflow: hidden; container-type: inline-size; }
   .brand__wordmark { position: absolute; top: 0; left: 0; width: 100%; clip-path: inset(0 0 42% 0); }
   .brand__studio { position: absolute; display: block; bottom: 0; left: 0; width: 100%; padding-left: .65em; color: #080808; font-size: 6.43cqw; font-weight: 600; line-height: 1; letter-spacing: .65em; }
@@ -86,7 +107,7 @@ body { font-family: 'DM Sans', 'Helvetica Neue', Arial, sans-serif; -webkit-font
   .hero__tagline em::after { height: .12em; bottom: -.23em; left: -2%; width: 104%; background: #ffda75; transform: rotate(-.5deg); }
   .hero__support { margin: clamp(10px, min(5.3vw, 3.3svh), 26px) 0 0; font-size: clamp(9px, 2.15vw, 13px); font-weight: 800; letter-spacing: clamp(.09em, .6vw, .29em); }
   .hero__support span { margin: 0 .4em; }
-  .hero__actions { position: relative; grid-row: 3; inset: auto; width: min(100%, clamp(218px, 71.6vw, 360px)); min-width: 0; gap: clamp(6px, 1.6vw, 10px); }
+  .hero__actions { position: relative; grid-row: 3; inset: auto; width: min(100%, clamp(218px, 71.6vw, 360px)); min-width: 0; margin-top: clamp(10px, 2svh, 16px); gap: clamp(6px, 1.6vw, 10px); }
   .action { min-height: clamp(44px, min(12.85vw, 8svh), 64px); padding: 7px clamp(10px, 5.5vw, 27px); gap: clamp(7px, 3.5vw, 17px); border: 0; font-size: clamp(14px, min(4.7vw, 3.2svh), 23px); font-weight: 700; letter-spacing: -.035em; box-shadow: 0 4px 8px #00000013; }
   .action--event { background: #ffda75; color: #080808; }
   .action--session { background: #151515; color: #fffaf0; }
@@ -98,27 +119,6 @@ body { font-family: 'DM Sans', 'Helvetica Neue', Arial, sans-serif; -webkit-font
   .hero__pagination i:first-child { border-color: var(--marvin-ink); }
 }
 
-/* Center each model independently in the viewport. The source photos are
-   941 × 1671; model centerlines are x=325 (Mini Tote) and x=290 (4R).
-   Scale the centerline by the photo's cover factor, then place it at 50vw.
-   XL Strip keeps its original image positioning. */
-@media (max-width: 699px), (max-width: 1000px) and (max-height: 540px) and (orientation: landscape) {
-  .hero__slide--mini { --portrait-offset: calc(50vw - max(34.5377vw, 19.4494svh)); }
-  .hero__slide--4r { --portrait-offset: calc(50vw - max(30.8183vw, 17.3549svh)); }
-  .hero__slide--mini::before,
-  .hero__slide--4r::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    /* Use a clean backdrop: the source edge includes clothing near the bottom. */
-    background: linear-gradient(155deg, #ffe6b5 0%, #ffdfa0 48%, #ffe4ad 100%);
-  }
-  .hero__slide--mini img,
-  .hero__slide--4r img {
-    position: relative;
-    transform: translateX(var(--portrait-offset));
-    /* Blend the exposed photo boundary without stretching any image pixels. */
-    -webkit-mask-image: linear-gradient(to right, transparent, #000 5%);
-    mask-image: linear-gradient(to right, transparent, #000 5%);
-  }
+@media (max-width: 1000px) and (max-height: 540px) and (orientation: landscape) {
+  .hero__slide img { object-fit: contain; object-position: center; }
 }
